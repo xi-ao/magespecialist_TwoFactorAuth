@@ -46,6 +46,6 @@ class Auth extends Template
 
     public function getSuccessUrl()
     {
-        return $this->getUrl('admin/index/index');
+        return $this->getUrl('/');
     }
 }

@@ -49,8 +49,6 @@ class Configure extends Template
     /**
      * Get register data JSON payload
      * @return string
-     * @throws \Magento\Framework\Exception\LocalizedException
-     * @throws \u2flib_server\Error
      */
     public function getRegisterData()
     {
@@ -63,7 +61,7 @@ class Configure extends Template
      */
     public function getSuccessUrl()
     {
-        return $this->getUrl('admin/index/index');
+        return $this->getUrl('/');
     }
 
     /**
