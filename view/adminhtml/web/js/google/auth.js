@@ -72,7 +72,7 @@ define([
             this.waitText('Please wait...');
             $.post(this.getPostUrl(), {
                 'tfa_code': this.verifyCode(),
-                'tfa_trust_device' : me.trustThisDevice() ? 1 : 0
+                'tfa_trust_device': me.trustThisDevice() ? 1 : 0
             })
                 .done(function (res) {
                     if (res.success) {
