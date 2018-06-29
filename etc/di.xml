@@ -43,6 +43,7 @@
                 type="MSP\TwoFactorAuth\Model\UserConfigManager"/>
     <preference for="MSP\TwoFactorAuth\Api\TrustedManagerInterface" type="MSP\TwoFactorAuth\Model\TrustedManager"/>
     <preference for="MSP\TwoFactorAuth\Api\TfaSessionInterface" type="MSP\TwoFactorAuth\Model\TfaSession"/>
+    <preference for="MSP\TwoFactorAuth\Model\AlertInterface" type="MSP\TwoFactorAuth\Model\Alert"/>
 
     <type name="Magento\Framework\Console\CommandList">
         <arguments>

@@ -20,6 +20,8 @@
 
 namespace MSP\TwoFactorAuth\Model\Provider\Engine;
 
+use Endroid\QrCode\QrCode;
+use Endroid\QrCode\Writer\PngWriter;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\DataObject;
 use Magento\Store\Model\StoreManagerInterface;
@@ -27,8 +29,6 @@ use Magento\User\Api\Data\UserInterface;
 use MSP\TwoFactorAuth\Api\UserConfigManagerInterface;
 use MSP\TwoFactorAuth\Api\EngineInterface;
 use Base32\Base32;
-use Endroid\QrCode\QrCode;
-use Endroid\QrCode\Writer\PngWriter;
 
 class Google implements EngineInterface
 {
@@ -148,8 +148,8 @@ class Google implements EngineInterface
      * Render TFA QrCode
      * @param UserInterface $user
      * @return string
-     * @throws \Endroid\QrCode\Exception\ValidationException
      * @throws \Magento\Framework\Exception\NoSuchEntityException
+     * @throws \Endroid\QrCode\Exception\ValidationException
      */
     public function getQrCodeAsPng(UserInterface $user)
     {
