@@ -1,6 +1,6 @@
 {
     "name": "msp/twofactorauth",
-    "description": "Two Factor Authentication module for Magento2 - Member of MageSpecialist SecuritySuite",
+    "description": "Two Factor Authentication module for Magento2",
     "require": {
         "php": "^7.0|^7.1|^7.2",
         "magento/magento-composer-installer": "*",
@@ -9,9 +9,6 @@
         "endroid/qr-code": "^2.5",
         "donatj/phpuseragentparser": "~0.7",
         "yubico/u2flib-server": "^1.0"
-    },
-    "suggest": {
-        "msp/security-suite": "Full MageSpecialist Security Suite"
     },
     "authors": [
         {
