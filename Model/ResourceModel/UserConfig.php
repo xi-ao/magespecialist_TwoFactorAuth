@@ -102,13 +102,13 @@ class UserConfig extends AbstractDb
 
         try {
             $object->setData('config', $this->decodeConfig($object->getData('encoded_config') ?? ''));
-        } catch (Exception $e) {
+        } catch (\Throwable $e) {
             $object->setData('config', []);
         }
 
         try {
             $object->setData('providers', $this->serializer->unserialize($object->getData('encoded_providers') ?? ''));
-        } catch (Exception $e) {
+        } catch (\Throwable $e) {
             $object->setData('providers', []);
         }
 
